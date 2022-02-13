@@ -1,1 +1,0 @@
-# Scooptacular.github.io
