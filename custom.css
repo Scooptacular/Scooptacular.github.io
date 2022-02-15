@@ -1,3 +1,16 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-image: url('media/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .header-container {
   max-width: 100%;
   position: relative;
@@ -30,12 +43,7 @@
   max-height: 100%;
 }
 
-.header-text {
-  font-family: cursive;
-  position: absolute;
-  bottom: 8px;
-  left: 8.5%;
-  text-align: center;
-  width: auto;
-  max-height: 100%;
+.header-logo-img {
+  width: 350px;
+  height: auto;
 }
