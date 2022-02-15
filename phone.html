@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<link rel="icon" type="image/x-icon" src="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Scooptacular | Unable To View</title>
 </head>
@@ -9,3 +10,11 @@
 	<h1>This website is not yet ready for mobile phone users!</h1>
 </body>
 </html>
+<script type="text/javascript">
+	let details = navigator.userAgent;
+    let regexp = /android|iphone|kindle|ipad/i;
+    let isMobileDevice = regexp.test(details);
+    if not (isMobileDevice) {
+        window.location.replace("https://scooptacular.github.io");
+    }
+</script>
