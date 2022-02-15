@@ -31,7 +31,6 @@ body {
   height: 300px;
   display: block;
   object-fit: cover;
-  max-height: 100%;
 }
 
 .header-logo {
