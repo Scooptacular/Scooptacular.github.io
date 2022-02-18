@@ -9,17 +9,21 @@
 	</head>
 	<body>
 		<header>
-			<div class="header-container">
+			<div class="header-container" id='header-container'>
 				<div class="header-image">
-					<img src="media/header.png" class="header-image-img">
+					<img src="media/header.png" class="header-image-img" id='header-image'>
+				</div>
+			</div>
+			<div class="navigation-bar" id='navigation-bar'>
+				<div class="navigation-bar-buttons" id='navigation-bar-buttons'>
+					<a class='navigation-button' href='https://scooptacular.github.io/'>Home</a>
+					<a class="navigation-button" href="https://scooptacular.github.io/about">About Us</a>
+					<a class="navigation-button" href="https://scooptacular.github.io/charity">Charity</a>
+					<a class='navigation-button' href='https://scooptacular.github.io/order' target=1>Order</a>
+					<a class="navigation-button" href="https://scooptacular.github.io/contact">Contact Us</a>
 				</div>
 			</div>
 		</header>
-		<div class="navigation-bar">
-			<a class='navigation-button' href='https://scooptacular.github.io/'>Home</a>
-			<a class='navigation-button' href='https://scooptacular.github.io/order'>Order</a>
-			<a class='navigation-button' href='https://scooptacular.github.io/survey'>Survey</a>
-		</div>
 		<main>
 			<h1 class="header-text">Scooptacular Ice Cream Bussiness</h1>
 		</main>
@@ -35,6 +39,10 @@
     let regexp = /android|iphone|kindle|ipad/i;
     let isMobileDevice = regexp.test(details);
     if (isMobileDevice) {
-        window.location.replace("https://scooptacular.github.io/phone");
+        // window.location.replace("https://scooptacular.github.io/phone");
+        document.getElementById("header-container").setAttribute("style", "height: 150px");
+        document.getElementById("header-image").setAttribute("style", "height: 150px");
+        document.getElementById("navigation-bar").setAttribute("style", "height: 50px");
+        document.getElementById("navigation-bar-buttons").setAttribute("style", "height: 50px; font-size: 10px");
     }
 </script>
