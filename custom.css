@@ -61,7 +61,8 @@ body {
   text-align: center;
   color: black;
   text-decoration: none;
-  border-radius: 15px 15px
+  border-radius: 15px 15px;
+  font-family: cursive;
 }
 
 .navigation-bar-buttons {
@@ -71,4 +72,9 @@ body {
 
 .navigation-button:hover {
   background-color: lightgoldenrodyellow;
+}
+
+.text-center {
+  text-align: center;
+  font-family: cursive;
 }
