@@ -62,7 +62,7 @@ body {
   color: black;
   text-decoration: none;
   border-radius: 15px 15px;
-  font-family: cursive;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .navigation-bar-buttons {
@@ -76,5 +76,5 @@ body {
 
 .text-center {
   text-align: center;
-  font-family: cursive;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
