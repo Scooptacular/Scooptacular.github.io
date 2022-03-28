@@ -2,14 +2,14 @@ html, body {
   margin: 0;
   height: 100%;
 }
-
+/*
 body {
   background-image: url('media/background.png');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
+}*/
 
 .header-container {
   max-width: 100%;
@@ -43,35 +43,85 @@ body {
   width: 15%;
   position: fixed;
 }
-
-.navigation-bar {
-  display: block;
-  position: relative;
-  background-color: palegoldenrod;
-  float: left;
-  width: 100%;
+.sidebar2 {
+  height: 100%;
+  width: fill;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 45px;
 }
 
-.navigation-button {
-  float: left;
-  margin: 10px 1.5%;
-  padding: 5px;
-  width: 100px;
-  background-color: pink;
-  text-align: center;
-  color: black;
+.sidebar2 a {
+  padding: 8px 8px 8px 10px;
   text-decoration: none;
-  border-radius: 15px 15px;
-  font-family: "Comic Sans MS", "Comic Sans";
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: center;
 }
 
-.navigation-bar-buttons {
-  display: flex;
-  justify-content: center;
+.sidebar2 a:hover {
+  color: #f1f1f1;
 }
 
-.navigation-button:hover {
-  background-color: lightgoldenrodyellow;
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  margin-left: 40px;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 45px;
+  transition: 0.5s;
+  white-space: nowrap; 
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebutton {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbutton {
+  position: fixed;
+  top: 0;
+  margin-left: 3px;
+}
+
+#main-nav {
+  transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  .sidebar2 {padding-top: 15px;}
+  .sidebar {margin-left: 30px;}
+  .sidebar2 a {font-size: 18px;}
 }
 
 .text-center {
