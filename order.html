@@ -30,3 +30,23 @@
 		</main>
 	</body>
 </html>
+<script type="text/javascript">
+	function openNav() {
+		document.getElementById('openbtn').setAttribute('style', 'pointer-events: none; opacity: 0')
+		document.getElementById('closebtn').setAttribute('style', 'opacity: 1')
+		document.getElementById('sidebar').setAttribute('style', 'width: 200px')
+	}
+	function closeNav() {
+		document.getElementById('openbtn').setAttribute('style', 'opacity: 1')
+		document.getElementById('closebtn').setAttribute('style', 'opacity: 0')
+		document.getElementById('sidebar').setAttribute('style', 'width: 0')
+	}
+    let details = navigator.userAgent;
+    let regexp = /android|iphone|kindle|ipad/i;
+    let isMobileDevice = regexp.test(details);
+    if (isMobileDevice) {
+        window.location.replace("https://scooptacular.github.io/phone");
+        document.getElementById("header-container").setAttribute("style", "height: 150px");
+        document.getElementById("header-image").setAttribute("style", "height: 150px");
+    }
+</script>
