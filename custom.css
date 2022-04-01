@@ -16,7 +16,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  border-bottom: 5px #fa9bac solid;
+  border-bottom: 10px #fa9bac solid;
   max-height: 100%;
 }
 
@@ -105,6 +105,7 @@ body {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  opacity: 0;
 }
 
 .openbutton {
