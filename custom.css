@@ -119,21 +119,20 @@ body {
 }
 
 @media screen and (max-height: 450px) {
+  .sidebar {margin-left: 30px;}
   .sidebar {padding-top: 30px;}
   .sidebar a {font-size: 18px;}
   .sidebar2 {padding-top: 30px;}
-  .sidebar {margin-left: 30px;}
   .sidebar2 a {font-size: 18px;}
   .header-image-img {height: 175px;}
 }
 
-@media screen and (max-height: 400px) {
-  .sidebar {padding-top: 30px;}
-  .sidebar a {font-size: 18px;}
-  .sidebar2 {padding-top: 30px;}
-  .sidebar {margin-left: 30px;}
-  .sidebar2 a {font-size: 18px;}
-  .header-image-img {height: 200px;}
+@media screen and (max-height: 350px) {
+  .header-image-img {height: 125px;}
+}
+
+@media screen and (max-height: 250px) {
+  .header-image-img {height: 100px;}
 }
 
 .text-center {
